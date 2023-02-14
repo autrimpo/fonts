@@ -13,7 +13,7 @@
   Grenze = "sha256-y5rvoUgX9CnhH94UrjBVvp5RGrht/BU8iPlcfe6vat8=";
   Grenze-Gotisch = "sha256-i7FYGv7ZsfhD3yoVZEmzA65si2bO4IpIWz5oqY30FUI=";
   Jaldi = "sha256-eV2hFM3b5b7g068w5r7PdULJ3w7pekDJqs4tQovsxRA=";
-  Leluja-Original = "sha256-Ds8wtLKsk09IF0ocM2rKpun+NVaayc5Z+PmrurD/G/M=";
+  Leluja-Original = "sha256-40ImK0OU4kJuB5gTnXuA8XLo2uh2hAoaT/5SejhhxSk=";
   Manuale = "sha256-pNzpWuXf9AnnWsidicxFTRju6TjKYjEBta3KC5Or+M0=";
   MuseoModerno = "sha256-q8oXvNkP+QUmO7viHXNCquYaXQJaIb0Q5eyEMpcm+ds=";
   Pragati-Narrow = "sha256-A9N1NyZ9OaGoQEoaAsRipC0bovteTnL4DZHQ53prPYc=";
