@@ -2,24 +2,33 @@
   description = "Open source fonts";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/22.11";
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/23.05";
+    flake-parts.url = "github:hercules-ci/flake-parts";
   };
 
-  outputs = {
+  outputs = inputs @ {
     self,
-    nixpkgs,
-    flake-utils,
+    flake-parts,
+    ...
   }:
-    flake-utils.lib.eachDefaultSystem (
-      system: let
-        pkgs = nixpkgs.legacyPackages.${system};
-        mkFont = pkgs.callPackage ./lib/mkFont.nix {};
+    flake-parts.lib.mkFlake {inherit inputs;} {
+      flake.lib.mkFont = ./lib/mkFont.nix;
+      systems = [
+        "x86_64-linux"
+        "aarch64-darwin"
+      ];
+      perSystem = {
+        self',
+        pkgs,
+        ...
+      }: let
+        mkFont = pkgs.callPackage self.lib.mkFont {};
       in {
+        formatter = pkgs.alejandra;
         packages = import ./pkgs/omnibusType {
           inherit mkFont;
           inherit (pkgs) lib fetchzip;
         };
-      }
-    );
+      };
+    };
 }
