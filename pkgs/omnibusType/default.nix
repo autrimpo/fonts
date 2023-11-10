@@ -3,7 +3,7 @@
   lib,
   fetchzip,
 }: let
-  version = import ./version.nix;
+  version = import ./_version.nix;
   fetchOmnibus = {
     pname,
     sha256,
@@ -27,4 +27,4 @@ in
       pname = name;
       sha256 = value;
     })
-  (import ./sources.nix)
+  (import ./_sources.nix)

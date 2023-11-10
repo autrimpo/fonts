@@ -2,7 +2,7 @@
 #!nix-shell -i bash -p nix-prefetch
 set -euxo pipefail
 
-OUT="sources.nix"
+OUT="_sources.nix"
 URL="https://www.omnibus-type.com/wp-content/uploads/"
 FONTS=("Archivo"
        "Archivo-Narrow"
