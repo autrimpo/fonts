@@ -26,6 +26,7 @@ in
         else null;
 
       installPhase = ''
+        runHook preInstall
         # these come up in some source trees, but are never useful to us
         find -iname __MACOSX -type d -print0 | xargs -0 rm -rf
         find -type f,l
