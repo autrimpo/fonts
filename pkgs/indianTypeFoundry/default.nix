@@ -11,6 +11,7 @@
     fetchzip {
       url = "https://api.fontshare.com/v2/fonts/download/${pname}";
       inherit sha256;
+      extension = "zip";
     };
   mkFontshare = {
     pname,
