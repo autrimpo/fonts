@@ -89,4 +89,4 @@ done
 
 printf "}\n" >> $OUT
 
-printf "\"%s\"\n" "$(date -I)" > version.nix
+printf "\"%s\"\n" "$(date -I)" > _version.nix
