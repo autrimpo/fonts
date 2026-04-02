@@ -1,5 +1,5 @@
 #!/usr/bin/env nix-shell
-#!nix-shell -i bash -p nix-prefetch
+#!nix-shell -i bash -p jq
 set -euxo pipefail
 
 OUT="_sources.nix"
@@ -37,7 +37,7 @@ printf "{\n" > $OUT
 
 for FONT in "${FONTS[@]}"
 do
-    HASH="$(nix-prefetch fetchzip --url "${URL}/${FONT}.zip")"
+    HASH="$(nix store prefetch-file --json --unpack "${URL}/${FONT}.zip" | jq -r .hash)"
     printf "  %s = "%s";\n" "$FONT" "\"$HASH\"" >> $OUT
 done
 
