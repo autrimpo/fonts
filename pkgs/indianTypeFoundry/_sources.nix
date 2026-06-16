@@ -57,6 +57,7 @@
   segment = "sha256-fOL7NKLvWO0cxvFC1pREgwtrdfvSp1gfi2u/D9TdM3Y=";
   sentient = "sha256-JpDlqyVgeq70vYuDIAohdrF6Us7jUs/JoT81QAEYFPc=";
   sharpie = "sha256-jhlUG6RvObTNZKUFPd4VO4321p6+UTtRw+ohgC7hQK4=";
+  sora = "sha256-4ZhycFFhfz+jx1pXQ1+MTJTSrorNGOeidKIBMgaHdNM=";
   stardom = "sha256-yfMH4nqY1YFp60N/2+cMSA1gyMBWfOcsnMsAKGNJuJM=";
   striper = "sha256-IDveOEYkoX3kBlqsL+LeOu31Tc+a1loDoITzez8BnEI=";
   styro = "sha256-zYJGSk1Trw74OgZiMyYIovl2qQXzxHy2FuYgq+8lVSs=";

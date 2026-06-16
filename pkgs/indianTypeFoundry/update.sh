@@ -63,6 +63,7 @@ FONTS=(
     "segment"
     "sentient"
     "sharpie"
+    "sora"
     "stardom"
     "striper"
     "styro"
